@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Image Search Abstraction Layer</title><link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i|Roboto+Slab"rel="stylesheet"><link rel="stylesheet"href="css/styles.css"></head><body><main><h1>Image Search Abstraction Layer</h1><blockquote>User stories:<ol><li>I can get the image URLs, alt text and page URLs for a set of images relating to a given search string.</li><li>I can skip the first 2 responses (as example) by adding a ?offset=2 parameter to the URL.</li><li>I can get a list of the most recently submitted search strings.</li></ol></blockquote><div class="examples"><h2>Example image search usage:</h2><code>https://soulchainer-image-search.herokuapp.com/lolcats%20funny?offset=10</code><h2>Example image search output:</h2><pre>
+[
+  {
+    "imageURL":"http://data.whicdn.com/images/30855761/large.jpg",
+    "thumbnail":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcVvn_L7D1b54fIv-1UZH1V_k1SJPRtamtdlJSjldoolzYEYZYj_XKtjzD",
+    "altText":"cat and funny image",
+    "pageURL":"http://weheartit.com/entry/30855761"
+  },
+  {
+    "imageURL":"https://i.ytimg.com/vi/dWpGC6Fg0io/hqdefault.jpg",
+    "altText":"... LOLCats Funny Cats",
+    "thumbnail":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNMCLSl2dHm87xTU6uMFZD0Jym2E-4lAaSdJzfc_6OkeB_CdF1vjgZZsR2",
+    "pageURL":"https://www.youtube.com/watch?v=dWpGC6Fg0io"
+  },
+  {
+    "imageURL":"https://s-media-cache-ak0.pinimg.com/564x/aa/bb/9b/aabb9bbf960870dae1b783e48d7d6038.jpg",
+    "altText":"... Captions Lolcats, Funny",
+    "thumbnail":"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7P_PtBz1AvAHeEKcaV3BAjvlYI-28OctNmzyettSaQXtk-OAOgkWHJg",
+    "pageURL":"https://www.pinterest.com/pin/253609022737640727/"
+  },
+  ...
+]
+      </pre><h2>Example last search strings query usage:</h2><code>https://soulchainer-image-search.herokuapp.com/latest/</code><h2>Example last search strings query output</h2><pre>
+[
+  {"term":"lolcats funny","when":"2016-08-15T09:51:47.491Z"},
+  {"term":"lolcats funny","when":"2016-08-15T09:27:21.877Z"},
+  {"term":"lolcats funny","when":"2016-08-15T08:48:54.857Z"},
+  {"term":"lolcats funny","when":"2016-08-15T07:54:11.096Z"},
+  {"term":"lolcats funny","when":"2016-08-15T07:53:55.928Z"},
+  {"term":"lolcats funny","when":"2016-08-15T07:47:41.012Z"},
+  {"term":"lolcats funny","when":"2016-08-15T07:47:17.436Z"},
+  {"term":"lolcats funny","when":"2016-08-15T07:30:26.981Z"},
+  {"term":"lolcats funny","when":"2016-08-15T05:42:21.839Z"},
+  {"term":"test","when":"2016-08-15T05:16:54.815Z"}
+]
+      </pre></div></main></body></html>
