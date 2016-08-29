@@ -7,7 +7,7 @@
     "test": "mocha -R mocha-pretty-spec-reporter --watch --recursive",
     "start": "node app.js"
   },
-  "author": "Juan Riquelme González <juanriqgon@tutanota.com> (soulchainer)",
+  "author": "Juan Riquelme González <juanriqgon@tutanota.com>",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "~2.14.0",
@@ -21,7 +21,7 @@
     "gulp-nodemon": "~2.1.0",
     "gulp-sass": "~2.3.2",
     "gulp-sourcemaps": "~1.6.0",
-    "gulp-util": "~ 3.0.7",
+    "gulp-util": "~3.0.7",
     "mocha": "~3.0.2",
     "mocha-pretty-spec-reporter": "0.1.0-beta.2"
   },
